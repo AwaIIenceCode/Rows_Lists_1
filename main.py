@@ -1,12 +1,9 @@
-def count_word ():
-    user_list = input('Enter the string: ')
-    user_word = input('Enter the word: ')
+def replace_word_in_string():
+    user_string = input('Enter the strings: ')
+    found_word = input('Enter the found word: ')
+    insert_word = input('Enter the insert word: ')
 
-    count_user_word = user_list.count(user_word)
+    result_string = user_string.replace(found_word, insert_word)
+    print(result_string)
 
-    print(count_user_word)
-
-count_word()
-
-#the count method depends on the case of the first letter, so to make it handle this,
-#you must write: count_user_word = user_list.lower().count(user_word.lower())
+replace_word_in_string()
