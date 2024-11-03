@@ -1,19 +1,19 @@
-#var1
+magenta = '\033[35m'
+reset = '\033[0m'
 
-def my_list():
-    user_list = [input('Type in the string: ')]
+def count_of_user_list():
+    user_list = input('Enter the list: ')
 
-    reversed_user_list = user_list[0][::-1]
+    users_digits = 0
+    users_letters = 0
 
-    print(f'Your result: {reversed_user_list}')
+    for char in user_list:
+        if char.isalpha():
+            users_letters += 1
+        elif char.isdigit():
+            users_digits += 1
 
-my_list()
+    print(f'The number of digits in your string: {magenta}{users_digits}{reset}')
+    print(f'The number of letters in your strings: {magenta}{users_letters}{reset}')
 
-#var2 without using a list
-
-def my_list():
-    user_string = input('Type in the string: ')
-    reversed_string = user_string[::-1]
-    print(f'Your result: {reversed_string}')
-
-my_list()
+count_of_user_list()
