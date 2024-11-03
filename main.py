@@ -1,19 +1,27 @@
-magenta = '\033[35m'
-reset = '\033[0m'
+#var_1
 
-def count_of_user_list():
-    user_list = input('Enter the list: ')
+def count_symbol ():
+    user_list = input('Enter the string: ')
+    user_symbol = input('Enter the symbol: ')
 
-    users_digits = 0
-    users_letters = 0
+    count_user_symbol = 0
 
-    for char in user_list:
-        if char.isalpha():
-            users_letters += 1
-        elif char.isdigit():
-            users_digits += 1
+    for symbol in user_list:
+        if symbol == user_symbol:
+            count_user_symbol += 1
 
-    print(f'The number of digits in your string: {magenta}{users_digits}{reset}')
-    print(f'The number of letters in your strings: {magenta}{users_letters}{reset}')
+    print(count_user_symbol)
 
-count_of_user_list()
+count_symbol()
+
+#var_2 with the method .count
+
+def count_symbol():
+    user_list = input('Enter the string: ')
+    user_symbol = input('Enter the symbol: ')
+
+    count_user_symbol = user_list.count(user_symbol)
+
+    print(count_user_symbol)
+
+count_symbol()
