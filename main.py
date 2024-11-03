@@ -2,7 +2,7 @@ magenta = '\033[35m'
 reset = '\033[0m'
 
 def calculating_numbers():
-    numbers_list = [3, 74, 0, 12, -4, 8, 0, -7, 5, 12, 34, 87, -7, 0, 0, 6, 0, 32, 76, 88, -5, 0, -0.75]
+    numbers_list = [3, 74, 0, 12, -4, 8, 0, -7, 5, 12, 34, 87, -7, 0, 0, 6, 0, 32, 76, 88, -5, 0, -0.75, -11]
     count_of_negative_num = 0
     count_of_positive_num = 0
     count_of_zero = 0
