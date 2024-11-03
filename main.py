@@ -1,27 +1,12 @@
-#var_1
-
-def count_symbol ():
+def count_word ():
     user_list = input('Enter the string: ')
-    user_symbol = input('Enter the symbol: ')
+    user_word = input('Enter the word: ')
 
-    count_user_symbol = 0
+    count_user_word = user_list.count(user_word)
 
-    for symbol in user_list:
-        if symbol == user_symbol:
-            count_user_symbol += 1
+    print(count_user_word)
 
-    print(count_user_symbol)
+count_word()
 
-count_symbol()
-
-#var_2 with the method .count
-
-def count_symbol():
-    user_list = input('Enter the string: ')
-    user_symbol = input('Enter the symbol: ')
-
-    count_user_symbol = user_list.count(user_symbol)
-
-    print(count_user_symbol)
-
-count_symbol()
+#the count method depends on the case of the first letter, so to make it handle this,
+#you must write: count_user_word = user_list.lower().count(user_word.lower())
